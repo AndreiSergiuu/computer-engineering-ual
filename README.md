@@ -16,7 +16,7 @@
 
 ### Year 1 / Primer Año (2025 - 2026)
 * **[Programming Methodology / Metodología de la Programación (MP)](./year-1/programming-methodology)**
-* **[Statistics / Estadística (R)]()**
+* **[Statistics / Estadística (R)](./year-1/statistics)**
 
 ---
 
