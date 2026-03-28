@@ -1,100 +1,97 @@
 package org.mp.sesion05.pilas;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
 
 import java.util.NoSuchElementException;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class StackTest {
 
-	@Test
-	public void testArrayStack() {
-		Stack<Integer> arrayStack = new ArrayStack<>();
+    @Test
+    public void testArrayStack() {
+        Stack<Integer> arrayStack = new ArrayStack<>();
 
-		assertTrue(arrayStack.isEmpty());
-		assertEquals(0, arrayStack.getSize());
+        assertTrue(arrayStack.isEmpty());
+        assertEquals(0, arrayStack.getSize());
 
-		arrayStack.push(1);
-		arrayStack.push(2);
-		arrayStack.push(3);
+        arrayStack.push(1);
+        arrayStack.push(2);
+        arrayStack.push(3);
 
-		assertFalse(arrayStack.isEmpty());
-		assertEquals(3, arrayStack.getSize());
-		assertEquals(Integer.valueOf(3), arrayStack.peek());
+        assertFalse(arrayStack.isEmpty());
+        assertEquals(3, arrayStack.getSize());
+        assertEquals(Integer.valueOf(3), arrayStack.peek());
 
-		assertEquals(Integer.valueOf(3), arrayStack.pop());
-		assertEquals(Integer.valueOf(2), arrayStack.pop());
+        assertEquals(Integer.valueOf(3), arrayStack.pop());
+        assertEquals(Integer.valueOf(2), arrayStack.pop());
 
-		assertEquals(1, arrayStack.getSize());
-		assertFalse(arrayStack.isEmpty());
+        assertEquals(1, arrayStack.getSize());
+        assertFalse(arrayStack.isEmpty());
 
-		arrayStack.pop();
+        arrayStack.pop();
 
-		assertTrue(arrayStack.isEmpty());
-		assertEquals(0, arrayStack.getSize());
-		assertThrows(NoSuchElementException.class, () -> arrayStack.peek());
-		assertThrows(NoSuchElementException.class, () -> arrayStack.pop());
-	}
+        assertTrue(arrayStack.isEmpty());
+        assertEquals(0, arrayStack.getSize());
+        assertThrows(NoSuchElementException.class, () -> arrayStack.peek());
+        assertThrows(NoSuchElementException.class, () -> arrayStack.pop());
+    }
 
-	@Test
-	public void testNodeStack() {
-		Stack<String> nodeStack = new NodeStack<>();
+    @Test
+    public void testNodeStack() {
+        Stack<String> nodeStack = new NodeStack<>();
 
-		assertTrue(nodeStack.isEmpty());
-		assertEquals(0, nodeStack.getSize());
+        assertTrue(nodeStack.isEmpty());
+        assertEquals(0, nodeStack.getSize());
 
-		nodeStack.push("Uno");
-		nodeStack.push("Dos");
-		nodeStack.push("Tres");
+        nodeStack.push("Uno");
+        nodeStack.push("Dos");
+        nodeStack.push("Tres");
 
-		assertFalse(nodeStack.isEmpty());
-		assertEquals(3, nodeStack.getSize());
-		assertEquals("Tres", nodeStack.peek());
+        assertFalse(nodeStack.isEmpty());
+        assertEquals(3, nodeStack.getSize());
+        assertEquals("Tres", nodeStack.peek());
 
-		assertEquals("Tres", nodeStack.pop());
-		assertEquals("Dos", nodeStack.pop());
+        assertEquals("Tres", nodeStack.pop());
+        assertEquals("Dos", nodeStack.pop());
 
-		assertEquals(1, nodeStack.getSize());
-		assertFalse(nodeStack.isEmpty());
+        assertEquals(1, nodeStack.getSize());
+        assertFalse(nodeStack.isEmpty());
 
-		nodeStack.pop(); // Pop the last element
+        nodeStack.pop(); // Pop the last element
 
-		assertTrue(nodeStack.isEmpty());
-		assertEquals(0, nodeStack.getSize());
-		assertThrows(NoSuchElementException.class, () -> nodeStack.peek());
-		assertThrows(NoSuchElementException.class, () -> nodeStack.pop());
-	}
+        assertTrue(nodeStack.isEmpty());
+        assertEquals(0, nodeStack.getSize());
+        assertThrows(NoSuchElementException.class, () -> nodeStack.peek());
+        assertThrows(NoSuchElementException.class, () -> nodeStack.pop());
+    }
 
-	@Test
-	public void testLinkedListStack() {
-		Stack<Double> linkedListStack = new LinkedListStack<>();
+    @Test
+    public void testLinkedListStack() {
+        Stack<Double> linkedListStack = new LinkedListStack<>();
 
-		assertTrue(linkedListStack.isEmpty());
-		assertEquals(0, linkedListStack.getSize());
+        assertTrue(linkedListStack.isEmpty());
+        assertEquals(0, linkedListStack.getSize());
 
-		linkedListStack.push(1.1);
-		linkedListStack.push(2.2);
-		linkedListStack.push(3.3);
+        linkedListStack.push(1.1);
+        linkedListStack.push(2.2);
+        linkedListStack.push(3.3);
 
-		assertFalse(linkedListStack.isEmpty());
-		assertEquals(3, linkedListStack.getSize());
-		assertEquals(Double.valueOf(3.3), linkedListStack.peek());
+        assertFalse(linkedListStack.isEmpty());
+        assertEquals(3, linkedListStack.getSize());
+        assertEquals(Double.valueOf(3.3), linkedListStack.peek());
 
-		assertEquals(Double.valueOf(3.3), linkedListStack.pop());
-		assertEquals(Double.valueOf(2.2), linkedListStack.pop());
+        assertEquals(Double.valueOf(3.3), linkedListStack.pop());
+        assertEquals(Double.valueOf(2.2), linkedListStack.pop());
 
-		assertEquals(1, linkedListStack.getSize());
-		assertFalse(linkedListStack.isEmpty());
+        assertEquals(1, linkedListStack.getSize());
+        assertFalse(linkedListStack.isEmpty());
 
-		linkedListStack.pop();
+        linkedListStack.pop();
 
-		assertTrue(linkedListStack.isEmpty());
-		assertEquals(0, linkedListStack.getSize());
-		assertThrows(NoSuchElementException.class, () -> linkedListStack.peek());
-		assertThrows(NoSuchElementException.class, () -> linkedListStack.pop());
-	}
+        assertTrue(linkedListStack.isEmpty());
+        assertEquals(0, linkedListStack.getSize());
+        assertThrows(NoSuchElementException.class, () -> linkedListStack.peek());
+        assertThrows(NoSuchElementException.class, () -> linkedListStack.pop());
+    }
 }
