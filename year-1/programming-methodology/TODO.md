@@ -13,7 +13,7 @@
 
 | Sesión       | Tema / Descripción                                 | Estado               | Notas Adicionales                                         |
 |:-------------|:---------------------------------------------------|:---------------------|:----------------------------------------------------------|
-| **Sesión 1** | TDD (JUnit 5), Excepciones y POO                   | 🛠️ *Casi Terminado* | - Falta terminar de documentar y subir el enunciado.      |
+| **Sesión 1** | TDD (JUnit 5), Excepciones y POO                   | ✅ *Terminado*        |                                                           |
 | **Sesión 2** | Documentación (Javadoc, Maven) y POO               | ⏳ *Pendiente*        | -                                                         |
 | **Sesión 3** | Programación Genérica, Matrices y Arrays Dinámicos | ⚙️ *Realizando*      | -                                                         |
 | **Sesión 4** | Listas (ArrayList, LinkedList)                     | ⏳ *Pendiente*        | -                                                         |
