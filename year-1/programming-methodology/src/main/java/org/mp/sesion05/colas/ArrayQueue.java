@@ -18,8 +18,15 @@ public class ArrayQueue<E> implements Queue<E> {
 
     @Override
     public void enqueue(E e) {
-        if (this.capacity == this.size) {
-            throw new IllegalStateException("La cola se encuentra llena");
+        if (this.size == this.capacity) {
+            E[] aux = (E[]) new Object[capacity];
+            for (int i = 0; i < size; i++) {
+                aux[i] = elements[(front + i) % capacity];
+            }
+            this.elements = java.util.Arrays.copyOf(aux, this.capacity * 2);
+            this.front = 0;
+            this.rear = size;
+            this.capacity = elements.length;
         }
         this.elements[rear] = e;
         this.rear = (this.rear + 1) % this.capacity;
