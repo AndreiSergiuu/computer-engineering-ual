@@ -16,7 +16,7 @@
 | **Sesión 1** | TDD (JUnit 5), Excepciones y POO                   | ✅ *Terminado* |                   |
 | **Sesión 2** | Documentación (Javadoc, Maven) y POO               | ⏳ *Pendiente* | -                 |
 | **Sesión 3** | Programación Genérica, Matrices y Arrays Dinámicos | ✅ *Terminado* | -                 |
-| **Sesión 4** | Listas (ArrayList, LinkedList)                     | ⏳ *Pendiente* | -                 |
+| **Sesión 4** | Listas (ArrayList, LinkedList)                     | ✅ *Terminado* | -                 |
 | **Sesión 5** | Pilas y Colas                                      | ✅ *Terminado* |                   |
 
 <br>
@@ -34,5 +34,5 @@
 | **Session 1** | TDD (JUnit 5), Exceptions and OOP                 | ✅ *Finished* |                  |
 | **Session 2** | Documentation (Javadoc, Maven) and OOP            | ⏳ *Pending*  | -                |
 | **Session 3** | Generic Programming, Matrices, and Dynamic Arrays | ✅ *Finished* | -                |
-| **Session 4** | Lists (ArrayList, LinkedList)                     | ⏳ *Pending*  | -                |
+| **Session 4** | Lists (ArrayList, LinkedList)                     | ✅ *Finished* | -                |
 | **Session 5** | Stacks and Queues                                 | ✅ *Finished* |                  |
