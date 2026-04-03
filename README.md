@@ -15,6 +15,7 @@
 ## 📚 Curriculum Structure / Estructura del Grado
 
 ### Year 1 / Primer Año (2025 - 2026)
+* **[Introduction to Programming / Introducción a la Programación (IP)](./year-1/introduction-to-programming)**
 * **[Programming Methodology / Metodología de la Programación (MP)](./year-1/programming-methodology)**
 * **[Statistics / Estadística (R)](./year-1/statistics)**
 
