@@ -1,6 +1,6 @@
 # 💻 Computer Engineering Degree - UAL
 
-<img src="https://media.licdn.com/dms/image/v2/D4D16AQHGljlVXs0nEA/profile-displaybackgroundimage-shrink_350_1400/B4DZl8da0iGwAc-/0/1758729713283?e=1775088000&v=beta&t=R2LK3lRtwT11RZ1f19f75XCyw_tKPdCXgces1vdQ2pc" width="100%" alt="UAL Campus Banner">
+<img src="assets/background.jpg" width="100%" alt="UAL Campus Banner">
 
 ---
 
