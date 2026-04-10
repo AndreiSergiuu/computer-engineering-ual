@@ -18,6 +18,7 @@
 * **[Introduction to Programming / Introducción a la Programación (IP)](./year-1/introduction-to-programming)**
 * **[Programming Methodology / Metodología de la Programación (MP)](./year-1/programming-methodology)**
 * **[Statistics / Estadística (R)](./year-1/statistics)**
+* **[Logic and Algorithms / Lógica y Algorítmica (LA)](./year-1/logic-and-algorithms)**
 
 ---
 
