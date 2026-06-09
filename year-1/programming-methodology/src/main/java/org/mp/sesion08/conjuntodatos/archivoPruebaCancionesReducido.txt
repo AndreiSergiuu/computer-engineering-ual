@@ -1,0 +1,11 @@
+Artista;Cancion
+The Beatles;Yesterday
+Queen;Bohemian Rhapsody
+Pink Floyd;Time
+Led Zeppelin;Stairway to Heaven
+Nirvana;Smells Like Teen Spirit
+Radiohead;Creep
+Michael Jackson;Thriller
+AC/DC;Back in Black
+Eagles;Hotel California
+U2;With or Without You

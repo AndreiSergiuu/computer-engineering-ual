@@ -1,0 +1,11 @@
+Artista;Cancion;Reproducciones;Duracion
+The Beatles;Yesterday;1200.5;125
+Queen;Bohemian Rhapsody;2500.0;354
+Pink Floyd;Time;950.8;421
+Led Zeppelin;Stairway to Heaven;2100.3;482
+Nirvana;Smells Like Teen Spirit;1800.4;301
+Radiohead;Creep;1100.2;238
+Michael Jackson;Thriller;3000.1;357
+AC/DC;Back in Black;2200.0;255
+Eagles;Hotel California;1900.5;390
+U2;With or Without You;1400.8;296

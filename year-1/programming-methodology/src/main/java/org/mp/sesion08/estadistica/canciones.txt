@@ -1,0 +1,9 @@
+Artista;Cancion;Reproducciones;Duracion
+The Beatles;Yesterday;1200.5;125
+Queen;Bohemian Rhapsody;NaN;354
+Pink Floyd;Time;950.8;421
+The Beatles;Let It Be;800.2;243
+Queen;Don't Stop Me Now;1500.0;209
+Radiohead;Creep;NaN;238
+Led Zeppelin;Stairway to Heaven;2100.3;482
+Nirvana;Smells Like Teen Spirit;1800.4;301
