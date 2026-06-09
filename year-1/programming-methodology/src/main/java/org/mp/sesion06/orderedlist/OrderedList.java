@@ -1,54 +1,82 @@
 package org.mp.sesion06.orderedlist;
 
-import org.mp.sesion04.list.linkedlist.LinkedList;
+import java.util.LinkedList;
 
-public class OrderedList <T extends Comparable<T>>{
+/**
+ * Lista genérica que mantiene sus elementos en orden ascendente.
+ * Actúa como envoltorio de una {@link LinkedList} de Java.
+ *
+ * @param <T> Tipo de los elementos; debe implementar {@link Comparable}.
+ * @author Andrei Sergiu Creata
+ * @version 1.0
+ * @since 09-06-2026
+ */
+public class OrderedList<T extends Comparable<T>> {
 
     private LinkedList<T> list;
 
-    public OrderedList(){
-        this.list = new LinkedList<T>();
+    /**
+     * Inicializa una lista ordenada vacía.
+     */
+    public OrderedList() {
+        this.list = new LinkedList<>();
     }
 
-    public void addElement(T element){
-        if (element == null) {
-            throw new IllegalArgumentException("No se pueden insertar elementos nulos");
+    /**
+     * Inserta el elemento en la posición correcta para mantener el orden ascendente.
+     *
+     * @param element Elemento a insertar.
+     */
+    public void addElement(T element) {
+        int index = 0;
+        for (T current : list) {
+            if (element.compareTo(current) <= 0) break;
+            index++;
         }
-        int size = this.getSize();
-        for(int i = 0; i < size; i++) {
-            T current = list.get(i);
-            if(element.compareTo(current) < 0) {
-                list.add(i, element);
-                return;
-            }
-        }
-        list.add(size, element);
+        list.add(index, element);
     }
 
-    public boolean removeElement(T element){
-        if (element == null) {
-            throw new IllegalArgumentException("No se puede eliminar un elemento que no existe");
-        }
-        return this.list.remove(element);
+    /**
+     * Elimina la primera ocurrencia del elemento especificado.
+     *
+     * @param element Elemento a eliminar.
+     * @return {@code true} si fue eliminado; {@code false} si no existía.
+     */
+    public boolean removeElement(T element) {
+        return list.remove(element);
     }
 
+    /**
+     * Devuelve el elemento en la posición indicada.
+     *
+     * @param index Índice basado en cero.
+     * @return Elemento en la posición {@code index}.
+     */
     public T getElement(int index) {
-        if (index < 0 || index >= this.getSize()) {
-            throw new IndexOutOfBoundsException("Índice fuera de rango: " + index);
-        }
-        return this.list.get(index);
+        return list.get(index);
     }
 
-    public int getIndex(T element){
-        return this.list.indexOf(element);
+    /**
+     * Devuelve la posición de la primera ocurrencia del elemento.
+     *
+     * @param element Elemento a buscar.
+     * @return Índice del elemento, o {@code -1} si no se encuentra.
+     */
+    public int getIndex(T element) {
+        return list.indexOf(element);
     }
 
-    public int getSize(){
-        return this.list.size();
+    /**
+     * @return Número de elementos en la lista.
+     */
+    public int getSize() {
+        return list.size();
     }
 
-    public boolean isEmpty(){
-        return this.list.isEmpty();
+    /**
+     * @return {@code true} si la lista está vacía; {@code false} en caso contrario.
+     */
+    public boolean isEmpty() {
+        return list.isEmpty();
     }
-
 }
