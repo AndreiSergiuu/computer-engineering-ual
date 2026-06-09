@@ -5,9 +5,6 @@ import org.mp.sesion08.conjuntodatos.ConjuntoDatos;
 
 /**
  * Calcula estadísticas descriptivas sobre columnas numéricas de un {@link ConjuntoDatos}.
- * Los valores {@code NaN} o no numéricos se omiten automáticamente.
- *
- * <p>Utiliza {@link DescriptiveStatistics} de Apache Commons Math.</p>
  *
  * @author Andrei Sergiu Creata
  * @version 1.0
@@ -15,10 +12,14 @@ import org.mp.sesion08.conjuntodatos.ConjuntoDatos;
  */
 public class Estadistica {
 
-    /** Conjunto de datos sobre el que se calculan las estadísticas. */
+    /**
+     * Conjunto de datos sobre el que se calculan las estadísticas.
+     */
     private ConjuntoDatos conjuntoDatos;
 
-    /** Estadísticas descriptivas de Apache Commons Math (campo requerido por el test de reflexión). */
+    /**
+     * Estadísticas descriptivas de Apache Commons Math (campo requerido por el test de reflexión).
+     */
     private DescriptiveStatistics stats;
 
     /**
@@ -43,7 +44,8 @@ public class Estadistica {
             try {
                 double d = Double.parseDouble(v);
                 if (!Double.isNaN(d)) ds.addValue(d);
-            } catch (NumberFormatException ignored) { }
+            } catch (NumberFormatException ignored) {
+            }
         }
         return ds;
     }

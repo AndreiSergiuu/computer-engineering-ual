@@ -1,0 +1,21 @@
+{
+  "artistas": [
+    {
+      "nombre": "John Lennon",
+      "albums": [
+        {
+          "titulo": "Imagine",
+          "canciones": [
+            {
+              "titulo":      "Imagine",
+              "artista":     "John Lennon",
+              "album":       "Imagine",
+              "anio":        "1971",
+              "rutaArchivo": "p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

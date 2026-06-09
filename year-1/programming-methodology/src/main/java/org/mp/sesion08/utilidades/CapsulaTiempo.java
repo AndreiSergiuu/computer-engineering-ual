@@ -8,7 +8,6 @@ import java.util.List;
 
 /**
  * Serializa y deserializa una lista de {@link Cancion} en un archivo de texto.
- * Formato de cada línea: {@code artista;titulo;duracion}
  *
  * @author Andrei Sergiu Creata
  * @version 1.0
@@ -47,9 +46,9 @@ public class CapsulaTiempo {
             while ((linea = br.readLine()) != null) {
                 String[] partes = linea.split(SEP, -1);
                 if (partes.length >= 3) {
-                    String artista  = partes[0].trim();
-                    String titulo   = partes[1].trim();
-                    int duracion    = Integer.parseInt(partes[2].trim());
+                    String artista = partes[0].trim();
+                    String titulo = partes[1].trim();
+                    int duracion = Integer.parseInt(partes[2].trim());
                     playlist.add(new Cancion(artista, titulo, duracion));
                 }
             }
